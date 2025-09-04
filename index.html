@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Modern</title>
+    <link rel="stylesheet" href="kasir.css">
+</head>
+<body>
+    <header>
+        <h1>Kasir Modern</h1>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <h2>Daftar Produk</h2>
+            <div class="products" id="productContainer"></div>
+        </section>
+
+        <section class="cart">
+            <h2>Keranjang</h2>
+            <div id="cartItems"></div>
+            <div class="cart-summary">
+                <p>Total: Rp <span id="totalPrice">0</span></p>
+                <button id="checkoutBtn">Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="rekap">
+        <h2>Rekapan Harian</h2>
+        <button id="newDayBtn">Tambah Hari Baru</button>
+        <div id="rekapList"></div>
+        <button onclick="showHistory()">Lihat Riwayat Rekapan</button>
+    </section>
+
+    <footer>
+        <p>© 2025 Dibuat Oleh Abim Molanu</p>
+    </footer>
+
+    <script src="kasir.js"></script>
+</body>
+</html>
